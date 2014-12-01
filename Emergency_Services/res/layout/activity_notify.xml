@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp" >
+
+    <DigitalClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/alarm_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/later_button"
+        style="@style/Button"
+        android:layout_width="200dp"
+        android:layout_below="@+id/alarm_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:onClick="onLaterClick"
+        android:text="@string/later" />
+
+    <Button
+        android:id="@+id/stop_button"
+        style="@style/Button"
+        android:layout_width="200dp"
+        android:layout_below="@+id/later_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="onStopClick"
+        android:text="@string/stop" />
+
+</RelativeLayout>

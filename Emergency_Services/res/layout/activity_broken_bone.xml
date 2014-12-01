@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                
+                android:onClick="readOutLoud"
+                android:text="We test Ivon, then most change " />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Who does not jump, the police, hop, hop, hop!."/>
+
+            <com.emergency.services.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="And let the nations hath outsiders know that Poles geese that are your language."/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

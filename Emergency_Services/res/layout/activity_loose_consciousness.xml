@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:onClick="readOutLoud"
+                android:text="Check whether the person unconscious breathing." />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="If not breathing, proceed to the artificial mouth-to-mouth. "/>
+
+            <Button
+                android:id="@+id/reanimationButton"
+                style="@style/ReanimationButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="If the victim is breathing, but breathing is loud and wheezing, check or in the mouth and throat does not have any foreign objects. If you are gagging wywołaś try inserting a finger unconscious person to Garl and tickling the back wall handful. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_4" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="If unconscious, did not return a foreign body, call for medical help. "/>
+
+            <com.emergency.services.firstaid.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_5" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="If a person breathes normally unconscious, loosen clothing around the neck and chest. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_6" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Place unconscious person in the recovery position. If you can, place a coat or blanket to reduce heat loss. Cover yourself sick, do not leave it unattended. "/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

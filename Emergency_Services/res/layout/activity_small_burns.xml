@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.emergency.services"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:onClick="readOutLoud"
+                android:text="If possible, immerse the burned part of the body in cold water or hold it under the tap for at least 10 minutes or until zelżenia pain. "/>
+
+            <com.emergency.services.firstaid.widget.CountdownButton
+                android:id="@+id/countdown"
+                style="@style/CountdownButton"
+                app:durationSec="600" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="If blisters form, do not pierce them! If you were in places where the skin may rub, cover them compress. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text=" Do not lubricate the burn ointment, cream or fat. Exceptions are light sunburn, eased often a mixture of zinc oxide and lime water." />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

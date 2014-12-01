@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                
+                android:onClick="readOutLoud"
+                android:text="In rare cases, the bite or sting may appear strong allergic reaction. Symptoms may include difficulty in breathing due to airway narrowing and / or any signs of shock. If you experience these symptoms after the bite, proceed as in the case of shock and immediately call medical assistance "/> 
+                
+                <!-- @activity_shock?? -->
+				
+			<com.emergency.services.firstaid.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

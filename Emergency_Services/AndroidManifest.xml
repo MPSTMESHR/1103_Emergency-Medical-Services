@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emergency.services"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- Allow to connect with internet -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.emergency.services.DashboardActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name="com.emergency.services.LoginActivity"
+            android:label="Login Account" >
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name="com.emergency.services.RegisterActivity"
+            android:label="Register New Account" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.SearchBlood"
+            android:label="Find Blood"
+            android:parentActivityName="com.emergency.services.DashboardActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.SosActivity"
+            android:label="SOS"
+            android:parentActivityName="com.emergency.services.DashboardActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.SosSettingsActivity"
+            android:label="@string/title_activity_sos_settings"
+            android:parentActivityName="com.emergency.services.SosActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.emergency.services.SosActivity" />
+        </activity>
+        <activity
+            android:name="com.emergency.services.HospitalSearch"
+            android:label="@string/title_activity_hospital_search"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.alarm.MainActivity"
+            android:label="Pill Reminder"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.firstaid.EmergencyListActivity"
+            android:label="First Aid"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.firstaid.EmergencyActivity"
+            android:label="First Aid"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.firstaid.ReanimationActivity"
+            android:label="First Aid"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.firstaid.FirstAidApp"
+            android:label="First Aid"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.alarm.AlarmEditActivity"
+            android:label="@string/new_alarm" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.alarm.AlarmListActivity"
+            android:label="@string/alarm_list" >
+        </activity>
+        <activity
+            android:name="com.emergency.services.alarm.NotifyActivity"
+            android:label="@string/alarm_arrived"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+
+        <service android:name="com.emergency.services.alarm.service.AlarmService" />
+
+        <receiver android:name="com.emergency.services.alarm.receiver.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.emergency.services.db.AlarmProvider"
+            android:authorities="com.emergency.services.db.AlarmProvider"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDgaXllvzAmrnPaSIoXdWibruto3I9sLtc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.emergency.services.AboutActivity"
+            android:label="About"
+            android:parentActivityName="com.emergency.services.DashboardActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.emergency.services.DashboardActivity" />
+        </activity>
+        <activity
+            android:name="com.emergency.services.rss.RSSimpleFeedList"
+            android:label="Rss Health" >
+        </activity>
+        
+       	<activity
+            android:name="com.emergency.services.rss.RSSimple"
+            android:label="Rss Health" >
+        </activity>
+        
+         <activity android:name="com.emergency.services.rss.RSSimpleFeed"
+                  android:label="RSSimple Feed Entries">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+<!--
+		<data android:mimeType="text/url" />
+-->
+            </intent-filter>
+        </activity>
+        <activity android:name="com.emergency.services.rss.RSSimpleFeedAdd"
+                  android:label="RSSimple Add Feed">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+<!--
+		<data android:mimeType="text/url" />
+-->
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.emergency.services.AboutDialog">
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:onClick="readOutLoud"
+                android:text="If the injured pale and sweating, is drowsy or show impaired consciousness, it may be a sign of shock. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Place the victim on his back. " />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Lift the legs slightly." />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_4" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Loosen tight clothing of the victim and incase it well." />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_5" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="It calms the patient and add him encouragement."/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_6" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Call for help." />
+
+            <com.emergency.services.firstaid.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

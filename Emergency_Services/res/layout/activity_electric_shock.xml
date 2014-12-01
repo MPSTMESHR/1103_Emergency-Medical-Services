@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:onClick="readOutLoud"
+                android:text="Disconnect power or zklikwiduj contact the victim of the current source to another. Do not try to pull the victim from the scene of the accident, because he can be an electric shock. For example, use a wooden stick in order to offset the source of power. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Check if the victim is breathing. If not, take immediate artificial respiration by mouth-to-mouth." />
+
+            <Button
+                android:id="@+id/reanimationButton"
+                style="@style/ReanimationButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="After restoring breathing place the victim in the recovery position. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_4" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Affixing of burns." />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_5" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Call for medical assistance" />
+
+            <com.emergency.services.firstaid.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

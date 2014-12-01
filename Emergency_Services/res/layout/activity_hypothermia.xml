@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:onClick="readOutLoud"
+                android:text="If the victim is unconscious, immediately apply artificial respiration method of mouth-to-mouth. "/>
+
+            <Button
+                android:id="@+id/reanimationButton"
+                style="@style/ReanimationButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="After restoring regular breathing, protect the victim against the cold, isolating it from the cold ground. In an enclosed area, remove wet clothing and change it to dry and warm or wrap yourself in warm blankets." />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="If the victim is conscious, give small quantities of warm, sweet liquid, but do not give alcohol. Do not immerse the victim in a hot bath, apply hot compresses or dry electric blanket." />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

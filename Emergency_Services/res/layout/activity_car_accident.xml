@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                
+                android:onClick="readOutLoud"
+                android:text="Remember to ensure their own security, you can not create a state of emergency!" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Park in front of the place of the event in order to secure the place and guided the wheel in the direction of the shoulder, turn on the hazard lights." />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="At night attach to each other something bright or trailers wearing a reflective material and use a flashlight. Follow the general rules of safety." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_4" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Send witnesses to the accident to warn oncoming drivers and informed the police, ambulance." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_5" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Set warning triangles or light at a suitable distance (according to the Highway Code) from the site of the accident on both sides." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_6" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Turn the ignition on all the damaged vehicles and if you can, remove the battery pack. Shut off the fuel in vehicles with diesel engines and motorcycles." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_7" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Set the vehicle in a stable position. If the car is normal, apply the handbrake, turn the gear or wheel lock, try to prevent the vehicle from tipping over." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_8" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Look around, if there are physical threats. Can someone smokes a cigarette? Is near the vehicles are labeled indicating the dangerous cargo? Have you broken overhead power line? Is near the spilled fuel?" />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_9" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="As a result of the collision occurs for various injuries to the driver and passengers. Quickly review the status of victims. With a car pull them only in the following situations: when there is a danger of ignition of the vehicle, when there is danger of collision with a vehicle damaged by another vehicle, or when you need a resuscitation of the victim." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_10" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Take the first of those whose lives are threatened. Search area so as not to leave victims thrown further away from the scene of the accident or who themselves alienated (shock damaged)." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_11" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Immediately, if necessary, proceed to resuscitation and label the life-threatening injury or looking dangerous. If possible, take care of victims without changing their position (exception - resuscitation)." />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_12" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Pre-always assume that there was damage to the cervical vertebrae. Support hands, head and neck sacrifices so that she could breathe. Whenever possible constantly observe all the victims until the advent of specialist help." />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

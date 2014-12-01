@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.emergency.services"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                
+                android:onClick="readOutLoud"
+                android:text="Remove garments soaked in hot fat, boiling water or chemical, if you do not adhere tightly to the skin. Dry clothes" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Immerse the affected area to a cold, possibly running water for at least 10 minutes. If the burn is extensive, cover with a clean towel soaked in cold water. "/>
+            
+            <com.emergency.services.firstaid.widget.CountdownButton
+                android:id="@+id/countdown"
+                style="@style/CountdownButton"
+                app:durationSec="600"                
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="After cooling, incase it burns clean with gauze or a compress. Do not use cotton or other fibrous materials dressings. If you take oparzonego to the hospital, do not pile burns; each dressing you will need to remove, causing new pain. "/>
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_4" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Keep the injured limb above, and if the victim is conscious while waiting for medical help, give small amounts of cold water to drink. "/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

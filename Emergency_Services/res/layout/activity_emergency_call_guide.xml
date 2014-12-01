@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                
+                android:onClick="readOutLoud"
+                android:text="Join the accident should contain the following: " />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="WHAT? - The type of accident (eg collision of cars, fall from a ladder, drowning, seizure, etc.) " />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="WHERE? - The precise location of the accident (address, mileage road or railway line) "/>
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_4" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="HOW MUCH? - The number of injured people " />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_5" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="HOW? - As victims" />
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_6" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="WHAT ARE YOU DOING? - Information on the aid granted hitherto "/>
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_7" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="WHO ARE YOU? - Details of the person requesting assistance (telephone number you are calling your name) "/>
+        </LinearLayout>
+		
+		<LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_8" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Any additional key information, such as the danger in the form of tanks, the threat of collapse of the building, etc." />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

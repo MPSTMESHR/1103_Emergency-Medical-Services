@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="emergencyCallGuide">How to get help</string>
+    <string name="bleeding">Bleeding from the wound</string>
+    <string name="noseBleeding">Bleeding from the nose</string>
+    <string name="sink">Skin Aspiration</string>
+    <string name="looseConsciousness">Loss of consciousness</string>
+    <string name="shock">Shock</string>
+    <string name="electricShock">Electric Shock</string>
+    <string name="smallBurns">Small Burns</string>
+    <string name="burnDressing">Burn Dressing</string>
+    <string name="chemicalsPoisoning">Chemical poisoning</string>
+    <string name="drugsAndFoodPoisoning">Drugs And Food Poisoning</string>
+    <string name="anaphylacticShock">Anaphylactic Shock</string>
+    <string name="carAccident">Car Acciden</string>
+    <string name="frostbite">Frostbite</string>
+    <string name="hypothermia">Hypothermia</string>
+    
+</resources>

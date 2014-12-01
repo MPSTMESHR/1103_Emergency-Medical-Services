@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:onClick="readOutLoud"
+                android:text="JEA> If the victim is conscious, noticed you are reporting the call Bowa ‡, ‡ send vomiting. "/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text= "JEA> If the victim is unconscious, do not give anything by mouth. Smiling, turtle ™ ¼ victim in the recovery position and, if breathing stops, give artificial respiration method ... mouth-to-mouth."/>
+
+            <Button
+                android:id="@+id/reanimationButton"
+                style="@style/ReanimationButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text= "As soon as a medical help secure the victim ...." />
+
+            <com.emergency.services.firstaid.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

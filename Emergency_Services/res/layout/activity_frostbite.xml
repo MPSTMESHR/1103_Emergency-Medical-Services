@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_1" />
+
+            <TextView
+                style="@style/StepContentText"
+                
+                android:onClick="readOutLoud"
+                android:text="Sacrifice frostbite as soon as possible to put in a warm room and seek medical attention. "/>
+				
+			<com.emergency.services.firstaid.widget.CallEmergencyButton style="@style/CallEmergencyButton" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_2" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Whenever possible, give the victim warm fluids. Shield the frostbitten parts of the body extra clothing or blankets or heat your own body heat them. The face you can cover with dry hands with gloves, hands should be put under the armpits, feet, lift. "/>
+        </LinearLayout>
+		
+        <LinearLayout style="@style/StepLayout" >
+
+            <TextView
+                style="@style/StepText"
+                android:text="@string/step_3" />
+
+            <TextView
+                style="@style/StepContentText"
+                android:text="Do not use direct heat or rub frostbitten areas. Encourage the victim to move frostbitten, but ogrzanymi parts of the body." />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
